@@ -1,0 +1,64 @@
+{
+  "name": "somepackage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "cd ../../ && ./packages/store/node_modules/.bin/vercel dev",
+    "dev": "yarn serve",
+    "build": "vue-cli-service build --mode ${NODE_ENV:-production}",
+    "lint": "vue-cli-service lint"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "vue"
+    ],
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/airbnb"
+    ],
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "core-js": "^3.7.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@vue/cli": "^4.5.8",
+    "@vue/cli-plugin-babel": "~4.5.8",
+    "@vue/cli-plugin-eslint": "~4.5.8",
+    "@vue/cli-service": "~4.5.8",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-vue": "^2.0.2",
+    "core-js-bundle": "^3.6.4",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "regenerator-runtime": "^0.13.3",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "vercel": "^20.1.4",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.1"
+  }
+}
